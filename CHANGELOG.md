@@ -1,5 +1,13 @@
 # What's new
 
+## 1.0.1 (6 October 2026)
+
+- Fixed: the app could stay on the loading screen. It now picks a free connection each time it starts, so a leftover copy of the app can no longer block it.
+- If something still goes wrong while starting, a window offers **Try again** or **Start fresh** (your old work is kept as a backup) instead of an endless loading screen.
+- Damaged saved data is repaired automatically.
+- New: Help → Diagnostics shows any start-up problems to copy into a bug report.
+- Note: after updating, the welcome screen appears once more.
+
 ## 1.0.0 (6 October 2026)
 
 First public release.
