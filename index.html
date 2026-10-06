@@ -131,7 +131,7 @@ footer a{color:var(--navy)}
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.8-1.1-2.9-4.2zM13.9 5.2c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg>
       <span>Download for Mac<small>macOS 10.15+ · Apple silicon &amp; Intel</small></span></a>
   </div>
-  <div class="meta"><span id="ver">Latest version</span> · <a href="https://github.com/Syed1337/certificate-studio/blob/main/CHANGELOG.md">What's new</a> · <a href="#install">First-time install help</a></div>
+  <div class="meta"><span id="ver">Latest version</span> · <span id="dlWrap" hidden><b id="dlCount"></b> · </span><a href="https://github.com/Syed1337/certificate-studio/blob/main/CHANGELOG.md">What's new</a> · <a href="#install">First-time install help</a></div>
   <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img src="screenshots/app-design.jpg" alt="Certificate Studio showing a certificate being designed" width="1600" height="960"></div>
 </div></header>
 
@@ -233,8 +233,13 @@ footer a{color:var(--navy)}
     w.className='btn second';m.className='btn primary';m.parentNode.insertBefore(m,w);
     document.getElementById('osMac').classList.add('hl');var i=document.querySelector('.install');i.insertBefore(document.getElementById('osMac'),i.firstChild);}
   else document.getElementById('osWin').classList.add('hl');
-  fetch('https://api.github.com/repos/Syed1337/certificate-studio/releases/latest').then(function(r){return r.ok?r.json():null}).then(function(j){
-    if(j&&j.tag_name)document.getElementById('ver').textContent='Version '+j.tag_name.replace(/^v/,'');}).catch(function(){});
+  fetch('https://api.github.com/repos/Syed1337/certificate-studio/releases?per_page=100').then(function(r){return r.ok?r.json():null}).then(function(list){
+    if(!list||!list.length)return;
+    var rel=list.filter(function(x){return !x.draft&&!x.prerelease;})[0];
+    if(rel&&rel.tag_name)document.getElementById('ver').textContent='Version '+rel.tag_name.replace(/^v/,'');
+    var n=0;list.forEach(function(x){(x.assets||[]).forEach(function(a){if(/\.(exe|zip)$/i.test(a.name))n+=a.download_count||0;});});
+    if(n>0){document.getElementById('dlCount').textContent=n.toLocaleString()+' downloads';document.getElementById('dlWrap').hidden=false;}
+  }).catch(function(){});
 })();
 </script>
 </body>
