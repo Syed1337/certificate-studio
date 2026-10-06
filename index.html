@@ -155,9 +155,9 @@ footer a{color:var(--navy)}
 <section class="tour" id="tour"><div class="wrap">
   <div class="center"><div class="eyebrow">A quick tour</div><h2>See how it works</h2></div>
   <div>
-    <div class="row"><div class="pic"><img src="screenshots/format-bar.jpg" alt="Floating format bar over the student name" width="1600" height="960"></div>
+    <div class="row"><div class="pic"><img src="screenshots/format-bar.jpg" alt="Floating format bar over the student name" width="1000" height="550"></div>
       <div><div class="eyebrow">Edit</div><h3>Click anything to change it</h3><p>Change the text, font, size, colour and style right on the certificate. Double-click for every option.</p><ul><li>Curated font pairings that follow typography rules</li><li>Your own fonts or any font on your computer</li></ul></div></div>
-    <div class="row"><div class="pic"><img src="screenshots/medal-designer.jpg" alt="Medal designer" width="1600" height="960"></div>
+    <div class="row"><div class="pic"><img src="screenshots/medal-designer.jpg" alt="Medal designer with an A* medal, laurel branches and stars" width="1600" height="960"></div>
       <div><div class="eyebrow">Medals</div><h3>A medal for every award</h3><p>Shapes, metals, ribbons, branches, stars and crowns, plus icons by subject: computer science, biology, chemistry, physics, sport and more.</p><ul><li>Grade and place medals: A*, A+, 1st, 2nd, 3rd</li><li>Or type your own text</li></ul></div></div>
     <div class="row"><div class="pic"><img src="screenshots/students.jpg" alt="Student table" width="1600" height="960"></div>
       <div><div class="eyebrow">Students</div><h3>Every student, checked before you print</h3><p>Edit names in a table, tick who to include, give one student a different design, and scroll through every certificate.</p></div></div>
@@ -239,7 +239,7 @@ footer a{color:var(--navy)}
     var rel=list.filter(function(x){return !x.draft&&!x.prerelease;})[0];
     if(rel&&rel.tag_name)document.getElementById('ver').textContent='Version '+rel.tag_name.replace(/^v/,'');
     var n=0;list.forEach(function(x){(x.assets||[]).forEach(function(a){if(/\.(exe|zip)$/i.test(a.name))n+=a.download_count||0;});});
-    if(n>0){document.getElementById('dlCount').textContent=n.toLocaleString()+(n===1?' download':' downloads');document.getElementById('dlWrap').hidden=false;}
+    document.getElementById('dlCount').textContent=n>0?n.toLocaleString()+(n===1?' download':' downloads'):'Just released';document.getElementById('dlWrap').hidden=false;
   }).catch(function(){});
 })();
 </script>
