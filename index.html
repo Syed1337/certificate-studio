@@ -155,16 +155,16 @@ footer a{color:var(--navy)}
 <section class="tour" id="tour"><div class="wrap">
   <div class="center"><div class="eyebrow">A quick tour</div><h2>See how it works</h2></div>
   <div>
-    <div class="row"><div class="pic"><img src="screenshots/format-bar.jpg" alt="Floating format bar over the student name" loading="lazy" width="1600" height="960"></div>
+    <div class="row"><div class="pic"><img src="screenshots/format-bar.jpg" alt="Floating format bar over the student name" width="1600" height="960"></div>
       <div><div class="eyebrow">Edit</div><h3>Click anything to change it</h3><p>Change the text, font, size, colour and style right on the certificate. Double-click for every option.</p><ul><li>Curated font pairings that follow typography rules</li><li>Your own fonts or any font on your computer</li></ul></div></div>
-    <div class="row"><div class="pic"><img src="screenshots/medal-designer.jpg" alt="Medal designer" loading="lazy" width="1600" height="960"></div>
+    <div class="row"><div class="pic"><img src="screenshots/medal-designer.jpg" alt="Medal designer" width="1600" height="960"></div>
       <div><div class="eyebrow">Medals</div><h3>A medal for every award</h3><p>Shapes, metals, ribbons, branches, stars and crowns, plus icons by subject: computer science, biology, chemistry, physics, sport and more.</p><ul><li>Grade and place medals: A*, A+, 1st, 2nd, 3rd</li><li>Or type your own text</li></ul></div></div>
-    <div class="row"><div class="pic"><img src="screenshots/students.jpg" alt="Student table" loading="lazy" width="1600" height="960"></div>
+    <div class="row"><div class="pic"><img src="screenshots/students.jpg" alt="Student table" width="1600" height="960"></div>
       <div><div class="eyebrow">Students</div><h3>Every student, checked before you print</h3><p>Edit names in a table, tick who to include, give one student a different design, and scroll through every certificate.</p></div></div>
-    <div class="row"><div class="pic"><img src="screenshots/background-removal.jpg" alt="Background removal editor" loading="lazy" width="1600" height="960"></div>
+    <div class="row"><div class="pic"><img src="screenshots/background-removal.jpg" alt="Background removal editor" width="1600" height="960"></div>
       <div><div class="eyebrow">Images</div><h3>Clean logos from any picture</h3><p>Remove backgrounds from logos, signatures and photos, including an offline AI mode, then touch up with a brush.</p></div></div>
   </div>
-  <div class="gallery"><img src="screenshots/designs.jpg" alt="A selection of certificate designs" loading="lazy" width="2480" height="1336"></div>
+  <div class="gallery"><img src="screenshots/designs.jpg" alt="A selection of certificate designs" width="2480" height="1336"></div>
 </div></section>
 
 <section id="install"><div class="wrap">
@@ -175,7 +175,7 @@ footer a{color:var(--navy)}
       <ol><li>Download <b>Certificate-Studio-Windows.exe</b> and double-click it.</li>
         <li>If you see <b>“Windows protected your PC”</b>, click <b>More info</b>.</li>
         <li>Click <b>Run anyway</b>. Windows remembers this, so you only do it once.</li></ol>
-      <div class="ill"><img src="assets/windows-run-anyway.svg" alt="Click More info, then Run anyway" loading="lazy" width="920" height="330"></div>
+      <div class="ill"><img src="assets/windows-run-anyway.svg" alt="Click More info, then Run anyway" width="920" height="330"></div>
       <a class="btn primary" href="https://github.com/Syed1337/certificate-studio/releases/latest/download/Certificate-Studio-Windows.exe">Download for Windows</a>
       <div class="note">Blank window? Install Microsoft's free <a href="https://developer.microsoft.com/microsoft-edge/webview2/#download-section">WebView2 Runtime</a> (already on Windows 11 and most Windows 10 PCs). Some browsers also ask you to <b>Keep</b> the download first.</div>
     </div>
@@ -183,7 +183,7 @@ footer a{color:var(--navy)}
       <ol><li>Download <b>Certificate-Studio-Mac.zip</b>, double-click it, and drag <b>Certificate Studio</b> into <b>Applications</b>.</li>
         <li>The first time, <b>right-click</b> the app and choose <b>Open</b>, then click <b>Open</b>.</li>
         <li>On macOS 15 or later: try to open it once, then go to <b>System Settings → Privacy &amp; Security</b> and click <b>Open Anyway</b>.</li></ol>
-      <div class="ill"><img src="assets/mac-open.svg" alt="Right-click then Open, or Open Anyway in Privacy and Security" loading="lazy" width="920" height="330"></div>
+      <div class="ill"><img src="assets/mac-open.svg" alt="Right-click then Open, or Open Anyway in Privacy and Security" width="920" height="330"></div>
       <a class="btn primary" href="https://github.com/Syed1337/certificate-studio/releases/latest/download/Certificate-Studio-Mac.zip">Download for Mac</a>
       <div class="note">Still blocked? Open <b>Terminal</b> and run<br><code>xattr -dr com.apple.quarantine "/Applications/Certificate Studio.app"</code></div>
     </div>
@@ -228,6 +228,7 @@ footer a{color:var(--navy)}
 
 <script>
 (function(){
+  document.querySelectorAll('img').forEach(function(i){i.addEventListener('error',function(){if(!i.dataset.r){i.dataset.r=1;var u=i.src.split('?')[0];setTimeout(function(){i.src=u+'?r='+Date.now();},600);}});});
   var mac=/Mac/.test(navigator.platform||'')||/Mac OS X/.test(navigator.userAgent);
   if(mac){var w=document.getElementById('winBtn'),m=document.getElementById('macBtn');
     w.className='btn second';m.className='btn primary';m.parentNode.insertBefore(m,w);
@@ -238,7 +239,7 @@ footer a{color:var(--navy)}
     var rel=list.filter(function(x){return !x.draft&&!x.prerelease;})[0];
     if(rel&&rel.tag_name)document.getElementById('ver').textContent='Version '+rel.tag_name.replace(/^v/,'');
     var n=0;list.forEach(function(x){(x.assets||[]).forEach(function(a){if(/\.(exe|zip)$/i.test(a.name))n+=a.download_count||0;});});
-    if(n>0){document.getElementById('dlCount').textContent=n.toLocaleString()+' downloads';document.getElementById('dlWrap').hidden=false;}
+    if(n>0){document.getElementById('dlCount').textContent=n.toLocaleString()+(n===1?' download':' downloads');document.getElementById('dlWrap').hidden=false;}
   }).catch(function(){});
 })();
 </script>
