@@ -6,7 +6,7 @@
 
 Homework awards, exam toppers, sports days, house points, graduation, staff thanks: pick a design, add your school logo and a class list, and print or export a certificate for every student at once.
 
-[**⬇ Download for Windows**](../../releases/latest) &nbsp;·&nbsp; [What's new](CHANGELOG.md) &nbsp;·&nbsp; [Report a problem](../../issues/new/choose)
+[**⬇ Download for Windows**](../../releases/latest/download/Certificate-Studio-Windows.exe) &nbsp;·&nbsp; [**⬇ Download for Mac**](../../releases/latest/download/Certificate-Studio-Mac.zip) &nbsp;·&nbsp; [Website](https://syed1337.github.io/certificate-studio/) &nbsp;·&nbsp; [What's new](CHANGELOG.md) &nbsp;·&nbsp; [Report a problem](../../issues/new/choose)
 
 ![Certificate Studio](screenshots/app-design.jpg)
 
@@ -26,13 +26,30 @@ Homework awards, exam toppers, sports days, house points, graduation, staff than
 
 ## Download and install
 
-1. Open the [latest release](../../releases/latest) and download **Certificate-Studio-Windows.exe**.
-2. Double-click it. There is nothing to install.
-3. Windows may show **"Windows protected your PC"** because the app is new and not yet code-signed. Click **More info → Run anyway**.
+### Windows
+
+1. Download **[Certificate-Studio-Windows.exe](../../releases/latest/download/Certificate-Studio-Windows.exe)** and double-click it. There is nothing to install.
+2. If Windows shows **"Windows protected your PC"**, click **More info**, then **Run anyway**. You only do this once.
+
+![Click More info, then Run anyway](assets/windows-run-anyway.svg)
 
 **Requirements:** Windows 10 or 11 (64-bit). The app uses Microsoft Edge WebView2, which is already on Windows 11 and most Windows 10 PCs. If the app opens to a blank window, install the free [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section).
 
-**Updates:** the app tells you when a new version is available (Help → Check for updates). Download the new `.exe` and replace the old one. Your saved work stays where it is.
+### Mac
+
+1. Download **[Certificate-Studio-Mac.zip](../../releases/latest/download/Certificate-Studio-Mac.zip)**, double-click it, and drag **Certificate Studio** into **Applications**.
+2. The first time, **right-click** the app and choose **Open**, then click **Open**.
+3. On macOS 15 Sequoia or later: try to open it once, then go to **System Settings → Privacy & Security** and click **Open Anyway**.
+
+![Right-click and Open, or Open Anyway](assets/mac-open.svg)
+
+Still blocked? Open Terminal and run `xattr -dr com.apple.quarantine "/Applications/Certificate Studio.app"`.
+
+**Requirements:** macOS 10.15 or later, Apple silicon or Intel.
+
+**Why the warning?** Windows and macOS show it for any new app from an independent developer without a paid code-signing certificate. The app has no installer, needs no admin rights and never sends your data anywhere.
+
+**Updates:** the app tells you when a new version is available (Help → Check for updates). Download the new version and replace the old one. Your saved work stays where it is.
 
 ## Feature tour
 

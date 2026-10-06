@@ -1,5 +1,13 @@
 # What's new
 
+## 1.1.0 (6 October 2026)
+
+**New: Mac version.** Certificate Studio now runs on Mac (macOS 10.15 or later, Apple silicon and Intel). Download `Certificate-Studio-Mac.zip`.
+
+- Mac menu bar with Copy, Paste, Select All and Quit, and ⌘ shortcuts shown throughout the app
+- New website with downloads and step-by-step install help: https://syed1337.github.io/certificate-studio/
+- Clearer first-time install instructions for the Windows "Windows protected your PC" message
+
 ## 1.0.1 (6 October 2026)
 
 - Fixed: the app could stay on the loading screen. It now picks a free connection each time it starts, so a leftover copy of the app can no longer block it.
