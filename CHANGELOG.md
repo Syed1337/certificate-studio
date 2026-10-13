@@ -1,5 +1,11 @@
 # What's new
 
+## 1.2.0 (13 October 2026)
+
+- New award category **Tests & Quizzes**: Weekly Test Excellence, Weekly Test Topper, Monthly Test Excellence, Monthly Test Topper, Unit Test, Class Test, Quiz Champion, Mock Exam, Term Test, Full Marks, Most Improved in Tests and Consistent Test Performer, each with matching wording.
+- Signatures: choose **Name + signature** or **Name only** for each person (School tab, or click the signature on the certificate). Name only prints the name on the signing line, no signature image needed.
+- Help → Diagnostics now shows how long each start-up step took, to help track down slow starts.
+
 ## 1.1.0 (6 October 2026)
 
 **New: Mac version.** Certificate Studio now runs on Mac (macOS 10.15 or later, Apple silicon and Intel). Download `Certificate-Studio-Mac.zip`.

@@ -15,7 +15,7 @@ Homework awards, exam toppers, sports days, house points, graduation, staff than
 ## Why teachers use it
 
 - **53 layouts in 172 colourways**: classic, luxury, modern, futuristic, sports, primary and kids, tech and science, and the dark "Jewel Night" collection.
-- **98 ready-made award types** with matching wording, medal icon and background, from Best Homework to Most Improved and Sports Day winners.
+- **106 ready-made award types** with matching wording, medal icon and background, from Best Homework and Weekly Test Topper to Most Improved and Sports Day winners.
 - **A whole class in one go**: paste names or import an Excel/CSV file, then export one PDF, a ZIP of PDFs or images, or print them all.
 - **Click anything to edit it**: a floating format bar appears over the name, title or medal, just like in Word.
 - **Your own branding**: several school logos, smart watermarks that adjust to each design, signatures with automatic background removal.
@@ -67,6 +67,7 @@ Still blocked? Open Terminal and run `xattr -dr com.apple.quarantine "/Applicati
 - Print on plain paper, or **pre-printed certificate paper** (prints only the words, with fine position adjustment and a test page)
 - Use your own design: upload a PNG, JPG or PDF background and type over it
 - 24 professional font pairings, plus fonts installed on your computer or your own font files
+- Signatures your way: name and signature, or just the printed name
 - Certificate numbers, QR codes, and **verification codes** with an Excel issue register and a Verify tool
 - School profiles for more than one school or campus
 - Undo/redo, keyboard shortcuts, mouse-wheel controls, automatic saving
