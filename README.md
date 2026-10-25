@@ -19,7 +19,7 @@ Homework awards, exam toppers, sports days, house points, graduation, staff than
 - **A whole class in one go**: paste names or import an Excel/CSV file, then export one PDF, a ZIP of PDFs or images, or print them all.
 - **Click anything to edit it**: a floating format bar appears over the name, title or medal, just like in Word.
 - **Your own branding**: several school logos, smart watermarks that adjust to each design, signatures with automatic background removal.
-- **Medal designer**: 18 shapes, 14 metals, laurel/olive/oak branches, stars and crowns, grade medals (A*, A+, 1st, 2nd, 3rd) or your own text.
+- **Medal designer**: 22 shapes, 14 metals, laurel/olive/oak branches, stars and crowns, conference-style coins, order stars and striped neck ribbons, grade medals (A*, A+, 1st, 2nd, 3rd) or your own text.
 - **Works fully offline**: no account, no internet needed, and student names never leave your computer.
 
 ![Designs](screenshots/designs.jpg)

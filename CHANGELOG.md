@@ -1,5 +1,21 @@
 # What's new
 
+## 1.3.0 (25 October 2026)
+
+**Faster, more reliable start-up**
+- Opens in under a second on most PCs. The start page is now 164 KB instead of 1.8 MB.
+- Fixed: the app could stay on the loading screen, or open without some fonts, on PCs where security or ad-blocking software slows local connections. Fonts now load through the app itself, and loading retries automatically if anything stalls.
+- Fixed: the close button now always closes the app. Work is still saved automatically after every change.
+
+**New conference-style medals**
+- New shapes: Milled coin, Double ring, Order star and Maltese cross.
+- New ribbons: Striped neck ribbon and Long V tails.
+- New finishes: Guilloche (fine security pattern) and Brushed metal.
+- 10 new ready-made medals: Conference medal, Order of merit, Merit cross, Milled coin, Guilloche seal, Summit star, Modern ring, Laurel coin, Keynote medal and Platinum honour.
+
+**Works completely offline**
+- Fonts, designs, PDF/Excel tools and AI background removal are all built in. The only online feature is the update check, which you can now switch off in Help → About.
+
 ## 1.2.0 (13 October 2026)
 
 - New award category **Tests & Quizzes**: Weekly Test Excellence, Weekly Test Topper, Monthly Test Excellence, Monthly Test Topper, Unit Test, Class Test, Quiz Champion, Mock Exam, Term Test, Full Marks, Most Improved in Tests and Consistent Test Performer, each with matching wording.
