@@ -12,7 +12,7 @@
 - New ribbons: Striped neck ribbon and Long V tails.
 - New finishes: Guilloche (fine security pattern) and Brushed metal.
 - **Real 3D metal medals:** medals are lit like real die-struck metal. Raised edges catch the light, the enamel centre is glossy and the school name is engraved into the rim.
-- **28 redesigned emblem icons**, drawn as multi-level medal reliefs: trophy, homework, book, star, graduation cap, exam, pencil, medal, crown, rocket, light bulb, flask, atom, laptop, calculator, heart, tick, target, calendar, rosette, clock, people, code, globe, apple, palette, flag and certificate scroll. Other icons get the same 3D metal finish. Choose *Struck metal*, *Metal line*, *Engraved* or *Flat line* under Medal → Centre → Icon finish.
+- **All 133 icons redesigned** as multi-level metal emblems, in every category: achievement, computing, biology, chemistry, physics, maths, business, languages, humanities, arts, performance, sports, character, graduation and primary. The icon picker shows the new designs. Choose *Struck metal*, *Metal line*, *Engraved* or *Flat line* under Medal → Centre → Icon finish.
 - 10 new ready-made medals: Conference medal, Order of merit, Merit cross, Milled coin, Guilloche seal, Summit star, Modern ring, Laurel coin, Keynote medal and Platinum honour.
 
 **Works completely offline**
